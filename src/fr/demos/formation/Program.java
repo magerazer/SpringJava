@@ -8,7 +8,7 @@ public class Program {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				new String[] {"context.xml"});
 		// demande à Spring de fournir une instance d'un bean
-		Hello hello = (Hello) context.getBean("helloId");
+		HelloAnnote hello = (HelloAnnote) context.getBean("helloAnnoteId");
 		
 		System.out.println(hello.sayHello());
 		
