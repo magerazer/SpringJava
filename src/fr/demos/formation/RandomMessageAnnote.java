@@ -4,7 +4,7 @@ import java.util.Random;
 
 import org.springframework.stereotype.Component;
 
-@Component("messageAnnoteId")
+//@Component("messageAnnoteId")
 public class RandomMessageAnnote implements Message {
 
 	

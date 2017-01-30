@@ -8,10 +8,15 @@ public class Program {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				new String[] {"context.xml"});
 		// demande à Spring de fournir une instance d'un bean
-		HelloAnnote hello = (HelloAnnote) context.getBean("helloAnnoteId");
+		//HelloAnnote hello = (HelloAnnote) context.getBean("helloAnnoteId");
+		
+		Hello hello = (Hello) context.getBean("hello");
 		
 		System.out.println(hello.sayHello());
 		
+		//Message randMes = (Message) context.getBean("messageId");
+		
+				
 		
 		context.close();
 	}
